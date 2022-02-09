@@ -1,0 +1,99 @@
+
+.heading
+{
+  font-size:20px;
+  width: 100%;
+  margin: 0px;
+  box-shadow:5px 5px 5px grey;
+}
+.heading_div
+{
+  float:none;
+  padding:10px;
+  background: white ; 
+  border-radius: 20px; 
+  color: black;
+  box-shadow:5px 5px 5px grey;
+}
+.objects_div{
+    border-radius: 20px;
+    box-shadow: 5px 5px 18px cadetblue;
+    background-color:rgb(20, 231, 238);
+    height:300px;
+    margin-left:20px;
+    margin-top:40px;
+}
+.copy_right_footer{
+    position:fixed;
+    color:white;
+    bottom:0;
+    width:100%;
+    background-color:darkslategrey;
+ line-height:3;
+ text-align:center;
+  }
+  .objects_image{
+    float:left;
+    margin:10px;
+    width:280px;
+    height:280px;
+  }
+.div_googlelens{
+  background-color: white;
+  width:300px;
+  float:right;
+  margin-top:10px;
+  margin-left:10px;
+  margin-right:40px;
+  border-radius: 50px;
+}
+.div_mobilenet{
+  background-color: white;
+  width:300px;
+  float:right;
+  margin-top:10px;
+  margin-left:10px;
+  margin-right:40px;
+  border-radius: 50px;
+}
+.div_main
+{
+  float:none;
+  background: white ; 
+  border-radius: 20px; 
+  color: black;
+  width:fit-content;
+  box-shadow:5px 5px 5px grey;
+float:right;
+margin-top:100px;
+margin-right:10px;
+}
+.lbl{
+  width:400px;
+}
+#output{
+  color:navy;
+  font-weight: bold;
+  font-size:20px
+}
+body{
+  background-size:cover;
+}
+.final_output{
+  background:steelblue;
+  float:left;
+  padding:10px;
+  border-radius: 20px; 
+  color: black;
+  box-shadow:5px 5px 5px grey;
+  width:fit-content;
+  margin-top:40px;
+  margin-bottom:300px;
+  height:100px;
+
+}
+#lbl1{
+  color:lemonchiffon;
+  margin-top:25px;
+  font-size:18px;
+}

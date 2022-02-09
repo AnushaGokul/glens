@@ -1,0 +1,93 @@
+
+<html>
+    <head>
+      <title>Google lens VS MobileNet</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body background="background.jpg">
+    <center>
+        <h3 class="btn btn-primary heading">Google lens VS MobileNet
+            <hr>
+            <center>
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 heading_div">
+               Which one is better?
+                <br>
+                Here is a case-study!
+                                        </div>
+           
+          </center>
+            <br>
+          </h3>
+      <br><br>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 objects_div">
+    <img class="objects_image" src="https://image.shutterstock.com/image-photo/mobile-phone-charger-on-orange-260nw-773099164.jpg">
+    <div class="div_googlelens"><h5>Output on Google lens- Charger</h5></div>
+    <div class="div_mobilenet"><h5>Output on Mobile Net- Microphone</h5></div>
+    <div class="div_main">
+    <p id="output">OUTPUT- </p><p class="lbl">Google Lens is more accurate</p>
+    </div>
+      </div>
+      <br><br>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 objects_div">
+    <img class="objects_image" src="https://5.imimg.com/data5/XC/EF/MY-6946138/geometry-box-500x500.jpg">
+    <div class="div_googlelens"><h5>Output on Google lens-Mathematical Geometry Box</h5></div>
+    <div class="div_mobilenet"><h5>Output on Mobile Net- Pencil Box, Bathing cap</h5></div>
+    <div class="div_main">
+    <p id="output">OUTPUT- </p><p class="lbl">Google Lens is more accurate</p>
+    </div>
+      </div>
+      <br><br>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 objects_div">
+    <img class="objects_image" src="https://image.shutterstock.com/image-photo/orange-rubber-ball-isolated-on-260nw-154930793.jpg">
+    <div class="div_googlelens"><h5>Output on Google lens-Hard rubber ball</h5></div>
+    <div class="div_mobilenet"><h5>Output on Mobile Net- Volleyball,balloon</h5></div>
+    <div class="div_main">
+    <p id="output">OUTPUT- </p><p class="lbl">Google Lens is more accurate</p>
+    </div>
+      </div>
+      
+      <br><br>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 objects_div">
+    <img class="objects_image" src="https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?size=338&ext=jpg">
+    <div class="div_googlelens"><h5>Output on Google lens-Novel,Storybook</h5></div>
+    <div class="div_mobilenet"><h5>Output on Mobile Net- Lighter</h5></div>
+    <div class="div_main">
+    <p id="output">OUTPUT- </p><p class="lbl">Google Lens is more accurate</p>
+    </div>
+      </div>
+    
+      <br><br>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 objects_div">
+    <img class="objects_image" src="data:image/jpeg;base64,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">
+    <div class="div_googlelens"><h5>Output on Google lens-Gold Medal</h5></div>
+    <div class="div_mobilenet"><h5>Output on Mobile Net-stop watch</h5></div>
+    <div class="div_main">
+    <p id="output">OUTPUT- </p><p class="lbl">Google Lens is more accurate</p>
+    </div>
+      </div>
+    <br><br>
+      <div class="final_output">
+        <label id="lbl1">I have tested 5 Images</label>
+        <label>Google lens identified all of them correctly. 
+          Hence I think google lens is more accurate.
+        </label>
+      </div>
+    <div class="copy_right_footer">
+    Developed by Anusha
+    </div>
+    </center>
+    <script src="main.js"></script>
+    </body>
+    
+    </html>
+    
+    
+    
